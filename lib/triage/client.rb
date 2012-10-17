@@ -24,7 +24,7 @@ module Triage
 
     def send(message)
       message['time'] = Time.now
-      @client.send(message.to_msgpack)
+      @client.send(message)
     end
 
   end
